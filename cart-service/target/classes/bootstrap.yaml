@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: cart-service  #服务名称，每个服务对应一个名称 购物车
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.213.129:8848
+      config:
+        file-extension: yaml # 文件后缀名
+        shared-configs: # 共享配置
+          - dataId: shared-jdbc.yaml # 共享mybatis配置
+          - dataId: shared-log.yaml # 共享日志配置
+          - dataId: shared-swagger.yaml # 共享日志配置
