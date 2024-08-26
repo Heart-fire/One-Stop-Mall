@@ -92,6 +92,9 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--开启AT模式，一：每个微服务数据库添加undo_log.SQL -->
+        <!--开启AT模式，二：修改 application.yml将模式改为AT模式-->
+
     </dependencies>
 
     <build>
