@@ -34,6 +34,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     private final IOrderDetailService detailService;
     private final CartClient cartClient;
 
+    //开启XA模式
     @Override
     @GlobalTransactional
     public Long createOrder(OrderFormDTO orderFormDTO) {
