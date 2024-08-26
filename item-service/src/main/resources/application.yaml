@@ -1,5 +1,5 @@
 server:
-  port: 8081 #每个服务对应一个端口号
+  port: 8081 #每 个服务对应一个端口号
 hm:
   db:
     database: hm-item
